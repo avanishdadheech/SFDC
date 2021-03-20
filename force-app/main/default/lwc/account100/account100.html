@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="HelloForEach" icon-name="custom:custom14">
+        <ul class="slds-m-around_medium">
+            <template for:each={accounts} for:item="acc">
+
+                <li key={acc.Id}> {acc.Name} </li>
+                <li key={acc.Id}> {acc.Type} </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>
